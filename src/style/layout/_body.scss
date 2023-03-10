@@ -1,0 +1,55 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  color: $white;
+  font-weight: 300
+}
+
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+}
+
+
+.container {
+  margin: 0px 30px;
+
+  @media (max-width: 500px) {
+    margin: 0px 15px;
+  }
+}
+
+.hide-text {
+  display: none;
+}
+
+.bg-cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  z-index: 400;
+  background-color: #111d0f00;
+  visibility: hidden;
+  transition: .3s;
+
+  &.bg-cover_active {
+    backdrop-filter: blur(4px);
+    visibility: visible;
+    background-color: #111d0fab;
+  }
+}
+
+.body.body_block {
+  overflow: hidden;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
